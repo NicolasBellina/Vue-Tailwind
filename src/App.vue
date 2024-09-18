@@ -73,7 +73,10 @@
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <router-link to="/login" class="text-sm font-semibold leading-6 text-gray-900">
+          Se connecter <span aria-hidden="true">&rarr;</span>
+        </router-link>
+        
       </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -113,6 +116,7 @@
       </DialogPanel>
     </Dialog>
   </header>  
+  <router-view></router-view>
 </template>
 
 <script setup>
