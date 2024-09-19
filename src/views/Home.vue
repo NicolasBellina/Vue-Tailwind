@@ -1,1 +1,3 @@
-<template><h1>Page d'accueil</h1></template>
+<template>
+    <h1>la page d'accueil</h1>
+</template>
