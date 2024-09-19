@@ -10,7 +10,7 @@
       <p class="text-sm leading-6 text-gray-900">
         <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
       </p>
-      <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
+      <a href="register" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
     </div>
     <div class="flex flex-1 justify-end">
       <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
@@ -24,7 +24,7 @@
   <header class="bg-white">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
         </a>
@@ -38,7 +38,7 @@
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <Popover class="relative">
           <PopoverButton class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-            Product
+            Competances
             <ChevronDownIcon class="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
           </PopoverButton>
 
@@ -68,9 +68,9 @@
           </transition>
         </Popover>
 
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+        <a href="about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+        <a href="contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <router-link to="/login" class="text-sm font-semibold leading-6 text-gray-900">
@@ -117,7 +117,11 @@
     </Dialog>
   </header>  
   <router-view></router-view>
+
+  
 </template>
+
+
 
 <script setup>
 import { ref } from 'vue'

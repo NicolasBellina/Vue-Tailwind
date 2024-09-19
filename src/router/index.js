@@ -1,11 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
+
+
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue')
   },
+
   {
     path: '/login',
     name: 'Login',
@@ -21,7 +24,30 @@ const routes = [
     name: 'Contact',
     component: () => import('../views/Contact.vue')
   },
+
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('../views/Register.vue')
+  },
+
+  {
+    path: '/forgotpassword',
+    name: 'ForgotPassword',
+    component: () => import('../views/forgotpassword.vue')
+  },
+
+  {
+    path: '/erreur404',
+    name: 'erreur404',
+    component: () => import('../views/erreur404.vue')
+  },
   
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/erreur404'
+  },
+
 ]
 
 const router = createRouter({
