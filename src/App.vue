@@ -67,10 +67,9 @@
             </PopoverPanel>
           </transition>
         </Popover>
-
-        <a href="about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
-        <a href="blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a>
-        <a href="contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+        <router-link to="/about" class="text-sm font-semibold leading-6 text-gray-900">À propos</router-link>
+        <router-link to="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</router-link>
+        <router-link to="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</router-link>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <router-link to="/login" class="text-sm font-semibold leading-6 text-gray-900">
@@ -104,9 +103,9 @@
                   <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</DisclosureButton>
                 </DisclosurePanel>
               </Disclosure>
-              <a href="about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-              <a href="blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</a>
-              <a href="contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+              <router-link to="/about" class="text-sm font-semibold leading-6 text-gray-900">À propos</router-link>
+              <router-link to="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</router-link>
+              <router-link to="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</router-link>
             </div>
             <div class="py-6">
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>

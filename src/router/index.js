@@ -33,20 +33,25 @@ const routes = [
   {
     path: '/blog',
     name: 'Blog',
-    component: () => import('../views/blog.vue')
+    component: () => import('../views/Blog.vue')
   },
 
+  {
+    path: '/blog/:article',
+    name: 'BlogArticle',
+    component: () => import('../views/blog/seo.vue')
+  },
 
   {
     path: '/forgotpassword',
     name: 'ForgotPassword',
-    component: () => import('../views/forgotpassword.vue')
+    component: () => import('../views/ForgotPassword.vue')
   },
 
   {
     path: '/erreur404',
     name: 'erreur404',
-    component: () => import('../views/erreur404.vue')
+    component: () => import('../views/Erreur404.vue')
   },
   
   {

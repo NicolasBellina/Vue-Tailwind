@@ -4,8 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],  theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blog': 'rgb(80 70 229)',
+      },
+    },
   },
   plugins: [],
+  
 }
 
